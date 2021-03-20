@@ -127,7 +127,7 @@ class App {
 
     if(testimonial) {
       name = testimonial.name;
-      message = testimonial.name;
+      message = testimonial.message;
     }
 
     if(!name || !message) {
