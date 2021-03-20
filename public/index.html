@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <!--Toppbar section-->
+    <div class="nav">
+      <label for="toogle">&#9776;</label>
+      <input type="checkbox" class="toogle" id="toogle">
+        
+      <div class="menu">
+        <a href="#home-section" class="current">Home</a>
+        <a href="#services-section">Services</a>
+        <a href="#testimonials-section">Testimonials</a>
+        <a href="#contact-section">Contact</a>
+      </div>
+    </div>
+
+    <!-- Banner section -->
+    <section class="banner" id="home-section">
+      <header>
+        <h2>Hello there, Fernando here!</h2>
+      </header>
+    </section>
+
+    <!-- Services section -->
+    <section class="services" id="services-section">
+    <h1>Services</h1>
+    <div class="box-container" id="box-container"></div>
+    </section>
+
+    <!-- Testimonial form section -->
+    <section class="testimonial-form-section">
+      <div class="inner-width-testimonial-form">
+        <h1>Write your testimonial</h1>
+        <input type="text" id="name-testimonial" class="name-testimonial" placeholder="Your name">
+        <textarea name="" id="message-testimonial" cols="30" rows="5" placeholder="Message" class="message"></textarea>
+        <button id="publish-button">Publish</button>
+      </div>
+    </section>
+
+    <!-- Testimonials section -->
+    <section class="testimonials" id="testimonials-section">
+      <p>Right click to remove your testimonial</p>
+
+      <div class="card" id="testimonial-card">
+        <div class="user-info">
+          <h2>Matt</h2>
+          <p>Way to go, Fernando! Congrats on your first website. Cheers!</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact form section -->
+    <section class="contact-form-section" id="contact-section">
+      <div class="inner-width-contact-form">
+        <h1>Contact me</h1>
+        <input type="text" id="name-contact" class="name" placeholder="Your name">
+        <input type="email" id="email-contact" class="email" placeholder="Your email">
+        <textarea name="" id="message-contact" cols="30" rows="5" placeholder="Message" class="message"></textarea>
+        <button id="contact-button">Send</button>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="footer-bar">
+      <div class="container"><small>Inspired on the <a href="https://startbootstrap.com/theme/freelancer"> Freelancer theme</a></small></div>
+    </footer>
+
+    <script src="./bundle.js"></script>
+  </body>
+</html>
